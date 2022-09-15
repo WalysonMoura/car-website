@@ -1,3 +1,6 @@
+import { createGlobalStyle } from 'styled-components'
+
+export const  GlobalStyle = createGlobalStyle`
 html,
 body {
   padding: 0;
@@ -15,12 +18,19 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
   body {
-    color: white;
-    background: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
+`
+
+
+export const theme = {
+    light: {
+      primary: '#0070f3',
+    },
+    dark:{
+        primary: '#0070f3'
+    }
+  }
