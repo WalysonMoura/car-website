@@ -1,6 +1,6 @@
 export const Colors = {
-  firstColor: "hsl(219, 69%, 56%)",
-  firstColorAlt: "hsl(219, 69%, 52%)",
+  azul1: "hsl(219, 69%, 56%)",
+  azul2: "hsl(219, 69%, 52%)",
   titleColor: "hsl(219, 8%, 95%)",
   textColor: "hsl(219, 8%, 75%)",
   textColorLight: "hsl(219, 4%, 55%)",

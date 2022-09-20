@@ -1,6 +1,6 @@
 
 // Styled-Components
-import * as Style from "../../styles/descricao";
+import * as Style from "./style";
 
 export default function Descricao({icon,value,name}) {
     return(
