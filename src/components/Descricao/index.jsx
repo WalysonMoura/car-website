@@ -6,7 +6,7 @@ export default function Descricao({icon,value,name}) {
     return(
         <Style.Content>
             {icon}
-            <span>{value}</span>
+            <h2>{value}</h2>
             <span>{name}</span>
         </Style.Content>
     )

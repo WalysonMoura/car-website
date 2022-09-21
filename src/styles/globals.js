@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { Colors, fontSize } from "./configStyle";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -56,10 +57,6 @@ table {
 }
 
 
-:root {
-  --body-font: 'Exo', sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -67,10 +64,45 @@ html {
 html,
 body {
 
-  font-family: var(--body-font), -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Exo', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-size: ${fontSize.normal};
+	color: ${Colors.textColor};
+	background-color: ${Colors.bodyColor};
+	overflow-x: hidden;
 }
-
+h1,h2{
+	color: ${Colors.white};
+}
+h1{
+		font-size: 1.5rem;
+		color: ${Colors.titleColor};
+	
+	}
+h2{
+		font-size: 1.25rem;
+	
+	}
+	h3{
+		font-size: 1rem;
+	}
+	p{
+		font-size: .938rem;
+	}
+@media screen and (min-width: 968px) {
+	h1{
+		font-size: 2.25rem;
+	}
+	h2{
+		font-size:1.5rem;
+	}
+	h3{
+		font-size: 1.25rem;
+	}
+	p{
+		font-size: 1rem;
+	}
+}
 a {
   color: inherit;
   text-decoration: none;

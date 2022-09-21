@@ -3,7 +3,7 @@ import Image from "next/image";
 
 //React Icons
 import { FaBeer } from "react-icons/fa";
-
+import { GiElectric } from "react-icons/gi"
 // Styled-Components
 import * as Style from "../styles/home";
 
@@ -22,12 +22,13 @@ export default function Home() {
       </Head>
 
       <Style.Main>
+        <div className="circulo circulo1"></div>
+        <div className="circulo circulo2"></div>
+        <div className="circulo circulo3"></div>
         <Style.Home>
           <h1>Escolha o melhor carro</h1>
-          <p>Porche Mission E</p>
-          <div>
-            <span>Carro elétrico</span>
-          </div>
+          <h2>Porche Mission E</h2>
+          <h3><GiElectric/> Carro elétrico</h3>
 
           <section>
             <Descricao icon={<FaBeer />} value="24°" name="TEMPERATURA" />
@@ -35,13 +36,13 @@ export default function Home() {
             <Descricao icon={<FaBeer />} value="94%" name="BATERIA" />
           </section>
 
-          <Button nome="kkkk" />
+          <Style.Botao>Iniciar</Style.Botao>
         </Style.Home>
         <Style.Sobre>
           <Image
-            src="/about.png"
-            height={20}
-            width={20}
+            src="/home.png"
+            height={200}
+            width={300}
             responsive
             alt="img2"
           />
@@ -61,12 +62,9 @@ export default function Home() {
           <h2>
             Escolha seu carro elétrico <br /> da marca Porsche
           </h2>
-          
         </Style.Populares>
         <Style.Recursos></Style.Recursos>
-        <Style.Destaques>
-         
-        </Style.Destaques>
+        <Style.Destaques></Style.Destaques>
         <Style.Offer>
           <div>
             <h2>Deseja receber ofertas especiais?</h2>
