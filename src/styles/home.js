@@ -29,7 +29,7 @@ export const Main = styled.main`
   }
 `;
 export const Home = styled.section`
- z-index: ;
+
   h1 {
     color: ${Colors.titleColor};
   }
@@ -74,7 +74,14 @@ export const Botao = styled.button`
   }
 `;
 export const Sobre = styled.section``;
-export const Populares = styled.section``;
+export const Populares = styled.section`
+section{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}`;
 export const Recursos = styled.section``;
 export const Destaques = styled.section``;
 export const Offer = styled.section``;

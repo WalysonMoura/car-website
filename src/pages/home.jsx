@@ -3,7 +3,7 @@ import Image from "next/image";
 
 //React Icons
 import { FaBeer } from "react-icons/fa";
-import { GiElectric } from "react-icons/gi"
+import { GiElectric } from "react-icons/gi";
 // Styled-Components
 import * as Style from "../styles/home";
 
@@ -22,13 +22,20 @@ export default function Home() {
       </Head>
 
       <Style.Main>
+        {/*}
         <div className="circulo circulo1"></div>
         <div className="circulo circulo2"></div>
         <div className="circulo circulo3"></div>
+        {*/}
         <Style.Home>
           <h1>Escolha o melhor carro</h1>
           <h2>Porche Mission E</h2>
-          <h3><GiElectric/> Carro elétrico</h3>
+          <h3>
+            <span>
+              <GiElectric />
+            </span>{" "}
+            Carro elétrico
+          </h3>
 
           <section>
             <Descricao icon={<FaBeer />} value="24°" name="TEMPERATURA" />
@@ -62,6 +69,38 @@ export default function Home() {
           <h2>
             Escolha seu carro elétrico <br /> da marca Porsche
           </h2>
+          <section>
+            <Card
+              marca="Porsche"
+              modelo="Turbo S"
+              imagem="/popular1.png"
+              preco="$175,900"
+            />
+            <Card
+              marca="Porsche"
+              modelo="Turbo S"
+              imagem="/popular2.png"
+              preco="$175,900"
+            />
+            <Card
+              marca="Porsche"
+              modelo="Turbo S"
+              imagem="/popular3.png"
+              preco="$175,900"
+            />
+            <Card
+              marca="Porsche"
+              modelo="Turbo S"
+              imagem="/popular4.png"
+              preco="$175,900"
+            />
+            <Card
+              marca="Porsche"
+              modelo="Turbo S"
+              imagem="/popular5.png"
+              preco="$175,900"
+            />
+          </section>
         </Style.Populares>
         <Style.Recursos></Style.Recursos>
         <Style.Destaques></Style.Destaques>
