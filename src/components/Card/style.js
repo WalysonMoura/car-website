@@ -12,6 +12,7 @@ export const Content = styled.div`
   border-radius: 1rem;
   position: relative;
   gap: 2rem;
+  overflow: hidden;
 
   :hover {
     img {
