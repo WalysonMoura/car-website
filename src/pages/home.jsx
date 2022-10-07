@@ -32,11 +32,17 @@ export default function Home() {
           <h2>Porche Mission E</h2>
           <h3>
             <span>
-              <GiElectric />
+              <GiElectric color="#3170be" size={25} />
             </span>{" "}
             Carro elétrico
           </h3>
-
+          <Image
+            src="/home.png"
+            height={200}
+            width={300}
+            responsive
+            alt="img2"
+          />
           <section>
             <Descricao icon={<FaBeer />} value="24°" name="TEMPERATURA" />
             <Descricao icon={<FaBeer />} value="873" name="QUILOMETRAGEM" />
@@ -46,10 +52,10 @@ export default function Home() {
           <Style.Botao>Iniciar</Style.Botao>
         </Style.Home>
         <Style.Sobre>
-          <Image
-            src="/home.png"
-            height={200}
-            width={300}
+        <Image
+            src="/about.png"
+            height={500}
+            width={700}
             responsive
             alt="img2"
           />
@@ -63,8 +69,10 @@ export default function Home() {
               futuristas com plataformas novas e inovadoras que duram muito
               tempo.
             </p>
+            <Button nome="Saiba mais"/>
           </div>
         </Style.Sobre>
+
         <Style.Populares>
           <h2>
             Escolha seu carro elétrico <br /> da marca Porsche

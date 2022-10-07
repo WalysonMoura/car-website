@@ -8,12 +8,19 @@ export const Content = styled.div`
   margin-left: 1.5rem;
 `;
 export const Main = styled.main`
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   .circulo {
     position: absolute;
     background-color: hsl(219, 33%, 32%, 0.5);
     filter: blur(112px);
     border-radius: 50%;
-   
   }
   .circulo1 {
     width: 400px;
@@ -29,11 +36,19 @@ export const Main = styled.main`
   }
 `;
 export const Home = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 
   h1 {
     color: ${Colors.titleColor};
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  section{
+  section {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -73,15 +88,44 @@ export const Botao = styled.button`
     }
   }
 `;
-export const Sobre = styled.section``;
+export const Sobre = styled.section`
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+
+  img {
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 2fr 1fr;
+
+    padding: 0 1rem;
+
+    img{
+    width: 22rem;
+    height: 22rem;
+    }
+  }
+`;
 export const Populares = styled.section`
-section{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-}`;
+  section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+`;
 export const Recursos = styled.section``;
 export const Destaques = styled.section``;
 export const Offer = styled.section``;

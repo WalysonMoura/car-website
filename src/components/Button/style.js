@@ -2,8 +2,13 @@ import styled from "styled-components";
 import { Colors } from "../../styles/configStyle";
 
 export const Content = styled.button`
-    width: 1rem;
-    height: 1rem;
+    width: 9rem;
+    height: 3rem;
+    color: #f8f8f8;
+    font-size: 1.15rem;
+    font-weight: 400;
     background-color: ${Colors.azul1};
-    border-radius: 1rem;
+    border-radius: .4rem;
+
+    
 `
